@@ -15,15 +15,9 @@ import { PostsComponent } from './posts/posts.component';
     imports: [
         BrowserModule,
         RouterModule.forRoot([
-            {
-                path: 'About',
-                component: AboutComponent,
-            },
-            {
-            path: 'Posts',
-            component: PostsComponent,
-            },
-
+            { path: '', redirectTo: 'About' , pathMatch: 'full' },
+            { path: 'About', component: AboutComponent },
+            { path: 'Posts',component: PostsComponent },
         ])
     ],
     providers: [],

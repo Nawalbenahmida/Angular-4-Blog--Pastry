@@ -1,0 +1,60 @@
+.img{
+    height: 573px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-image: url(../../assets/brooke-lark-96398.jpg);
+}
+
+
+.fa.fa-angle-double-down{
+    margin-top: 500px;
+    font-size: 70px;
+    color: #DA4167;
+}
+
+.flech #scrollDown{
+    animation : bounce 1s infinite;
+
+}
+
+@keyframes bounce{
+    0%{
+        transform : translateY(-20px);
+    }
+    50%{
+        transform : translateY(-05px); 
+    }
+    100%{
+        transform : translateY(-20px);
+    }
+}
+
+img {
+    height: 500px;
+    width: 350px;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    float: left;
+}
+
+.desc{
+    display: flex;
+    height: 100vh;
+}
+
+.text{
+    text-align:justify;
+    margin: auto;
+}
+
+h1{
+    margin: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+}
+
