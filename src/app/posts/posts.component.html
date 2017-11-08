@@ -1,3 +1,8 @@
-<p>
-  posts works!
-</p>
+<div class="recherche">
+<input [(ngModel)]="name" type="text" placeholder="Search">
+</div>
+
+<div *ngFor="let article of (articles | filter: name)">
+   <h1>{{article.titre}}</h1> {{article.desc}}  
+    
+</div>

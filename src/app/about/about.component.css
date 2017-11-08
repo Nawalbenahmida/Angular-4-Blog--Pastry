@@ -4,7 +4,7 @@
     background-position: center;
     background-size: cover;
     object-fit: cover;
-    background-image: url(../../assets/brooke-lark-96398.jpg);
+    background-image: url(../../assets/lance-anderson-167718.jpg);
 }
 
 
@@ -32,13 +32,12 @@
 }
 
 img {
-    height: 500px;
+    height: 520px;
     width: 350px;
     background-position: center;
     background-size: cover;
     object-fit: cover;
-    margin-top: 30px;
-    margin-bottom: 25px;
+    margin-top: 35px;
     float: left;
 }
 
@@ -55,6 +54,6 @@ img {
 h1{
     margin: 30px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 23px;
+    font-size: 20px;
 }
 
