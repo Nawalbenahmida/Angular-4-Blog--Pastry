@@ -1,8 +1,9 @@
 <div class="recherche">
 <input [(ngModel)]="name" type="text" placeholder="Search">
+<button (click)="date = !date">Filtre Date</button>
 </div>
 
-<div *ngFor="let article of (articles | filter: name)">
-   <h1>{{article.titre}}</h1> {{article.desc}}  
+<div *ngFor="let article of (articles | filter: name | sort: date)">
+   <h1>{{article.titre}}</h1> {{article.desc}} {{article.date | date:"MMMM d, y" }}  
     
 </div>

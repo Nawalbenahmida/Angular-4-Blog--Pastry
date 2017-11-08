@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { PostsComponent } from './posts/posts.component';
 import { FilterPipe } from './filter.pipe';
+import { SortPipe } from './sort.pipe';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { FilterPipe } from './filter.pipe';
         AboutComponent,
         PostsComponent,
         FilterPipe,
+        SortPipe,
         
     ],
     imports: [
