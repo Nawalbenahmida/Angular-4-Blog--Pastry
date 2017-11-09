@@ -1,9 +1,9 @@
 <div class="recherche">
-<input [(ngModel)]="name" type="text" placeholder="Search">
+<!--<input [(ngModel)]="name" type="text" placeholder="Search" >-->
 <button (click)="date = !date">Filtre Date</button>
 </div>
 <div class="article">
-<div  *ngFor="let article of (articles | filter: name | sort: date)">
+<div  *ngFor="let article of (articles | filter: search | sort: date)">
  
   <img class="image" src="{{article.image}}">
    <h1>{{article.titre}}</h1>

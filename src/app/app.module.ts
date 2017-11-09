@@ -3,9 +3,15 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+
+import { FilterService } from './filter.service';
+
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { PostsComponent } from './posts/posts.component';
+import { SearchComponent } from './search/search.component';
+
+
 import { FilterPipe } from './filter.pipe';
 import { SortPipe } from './sort.pipe';
 
@@ -17,6 +23,7 @@ import { SortPipe } from './sort.pipe';
         PostsComponent,
         FilterPipe,
         SortPipe,
+        SearchComponent,
         
     ],
     imports: [
@@ -28,7 +35,7 @@ import { SortPipe } from './sort.pipe';
             { path: 'Posts',component: PostsComponent },
         ])
     ],
-    providers: [],
+    providers: [FilterService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

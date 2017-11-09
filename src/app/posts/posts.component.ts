@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { NgModel } from '@angular/forms';
-import { FilterPipe }from '../filter.pipe';
 
+import { FilterService } from '../filter.service';
+
+import { FilterPipe }from '../filter.pipe';
 import {SortPipe } from '../sort.pipe';
+import { SearchComponent } from '../search/search.component';
 
 import { Article } from '../article/article';
 
@@ -31,14 +34,21 @@ const ARTICLES: Article[] =  [
 export class PostsComponent implements OnInit {
     
     articles: Article[];
-    name: string = '';
+    /*name: string = '';*/
+    search: string;
     
     date: boolean = true;
     
-  constructor() { }
+  constructor(private filter: FilterService) {
+        this.articles = ARTICLES;
+    
+  }
 
   ngOnInit() {
-      this.articles = ARTICLES;
+    this.filter.search.subscribe(s  => {
+      this.search = s ;
+        
+    });
   }
 
 }

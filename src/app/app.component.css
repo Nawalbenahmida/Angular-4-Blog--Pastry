@@ -7,17 +7,15 @@
 a{
     text-decoration: none;
     font-size: 23px;
-    text-align: center;
-    margin: 10px;
     color: #FCEADE;
     font-family: 'Montserrat', sans-serif;
+    margin-left: 39px;
 }
 
 nav{
     height: 29px;
     background: #DA4167;
     text-align: center;
-    
-
-    
+    line-height: 26px;
 }
+

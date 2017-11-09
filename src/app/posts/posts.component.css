@@ -1,5 +1,6 @@
 input{
     margin: 29px;
+    width: 200px;
 }
 
 .image{
@@ -25,5 +26,17 @@ h1,p,h4{
     
 }
 
+h4{
+    color: #DA4167;
+}
+
+button{
+    margin: 25px;
+    margin-right: 940px;
+    width: 98px;
+    height: 31px;
+    font-family: 'Montserrat';
+
+}
 
 
